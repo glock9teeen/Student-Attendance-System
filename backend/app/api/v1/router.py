@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.v1.endpoints import analytics, auth, courses, reports, users
+from app.api.v1.endpoints import analytics, attendance, auth, courses, reports, users
 
 
 api_router = APIRouter()
@@ -9,3 +9,4 @@ api_router.include_router(users.router)
 api_router.include_router(courses.router)
 api_router.include_router(analytics.router)
 api_router.include_router(reports.router)
+api_router.include_router(attendance.router)
